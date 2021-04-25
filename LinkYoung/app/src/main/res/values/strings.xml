@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LinkYoung</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+<!--New Strings-->
+    <string name="title_">Cursos</string>>
+    <string name="title_cursos">Cursos</string>
+    <string name="title_perfil">Perfil</string>
+</resources>

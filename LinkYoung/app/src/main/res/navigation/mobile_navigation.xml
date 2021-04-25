@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/title_cursos">
+
+    <fragment
+        android:id="@+id/title_cursos"
+        android:name="br.com.linkyoung.ui.home.HomeFragment"
+        android:label="title_cursos"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="br.com.linkyoung.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="br.com.linkyoung.ui.notifications.NotificationsFragment"
+        android:label="@string/title_perfil"
+        tools:layout="@layout/fragment_notifications" />
+</navigation>
