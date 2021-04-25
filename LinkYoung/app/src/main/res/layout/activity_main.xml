@@ -6,78 +6,58 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textNome"
-        android:layout_width="0dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/poppins_medium"
-        android:text="Ana Luíza"
-        android:textColor="@color/purple_500"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+    <VideoView
+        android:id="@+id/video"
+        android:layout_width="415dp"
+        android:layout_height="255dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="155dp"
-        android:layout_height="146dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@mipmap/foto_menina" />
-
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/button"
-        android:layout_width="250dp"
-        android:layout_height="62dp"
-        android:layout_marginStart="136dp"
-        android:layout_marginTop="28dp"
-        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/buttonAulas"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
         android:paddingTop="3dp"
-        android:text="Lógica de Programação"
+        android:text="Aulas"
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:backgroundTint="@color/purple_500"
         app:cornerRadius="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSobre"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textNome" />
+        app:layout_constraintTop_toBottomOf="@+id/video" />
 
-    <ImageButton
-        android:id="@+id/buttonAula1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="?attr/selectableItemBackgroundBorderless"
-        android:src="@drawable/aula2_imagem"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonSobre"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:paddingTop="3dp"
+        android:text="Quiz"
+        android:textColor="@color/purple"
+        android:textStyle="bold"
+        app:backgroundTint="@color/white"
+        app:cornerRadius="50dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.463"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.373" />
+        app:layout_constraintStart_toEndOf="@+id/buttonAulas"
+        app:layout_constraintTop_toBottomOf="@+id/video" />
 
-    <ImageButton
-        android:id="@+id/buttonAula2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="?attr/selectableItemBackgroundBorderless"
-        android:src="@drawable/aula1_imagem"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonAula1"
-        app:layout_constraintVertical_bias="0.18" />
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/nav_view"
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="0dp"
-        android:layout_marginEnd="0dp"
-        android:background="?android:attr/windowBackground"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:menu="@menu/bottom_nav_menu" />
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSobre"
+        app:srcCompat="@drawable/listcursos" />
 
     <fragment
         android:id="@+id/nav_host_fragment"
